@@ -20,7 +20,7 @@ const routes =  [
     path: "/",
     alias: "/missionCommanders",
     name: "missionCommanders",
-    component: () => import("./components/MissionComanderList")
+    component: () => import("./components/MissionCommanderList")
   },
   {
     path: "/missionCommander/:id",
