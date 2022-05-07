@@ -5,7 +5,7 @@
       <ul class="list-group">
         <li class="list-group-item"
           :class="{ active: index == currentIndex }"
-          v-for="(missionCommander, index) in missionComanders"
+          v-for="(missionCommander, index) in missionCommanders"
           :key="index"
           @click="setActiveExplorer(missionCommander, index)"
         >
@@ -33,7 +33,7 @@
 </template>
 <script>
 
-import MissionCOmanderService from "../services/MissionCommanderService";
+import MissionComanderService from "../services/MissionCommanderService";
 
 export default {
   name: "missionCommander-list",
@@ -50,7 +50,7 @@ export default {
   },
   methods: {
     getAllMissionComanders(){
-      ExplorerService.getAll()
+      MissionComanderService.getAll()
         .then(response => {
           this.missionCommanders = response.data;
         })
