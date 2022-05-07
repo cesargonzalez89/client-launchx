@@ -5,16 +5,16 @@ class MissionCommanderService {
     return http.get("/missionCommander");
   }
   get(id) {
-    return http.get(`/missionComander/${id}`);
+    return http.get(`/missionCommander/${id}`);
   }
   create(data) {
-    return http.post("/missionComander", data);
+    return http.post("/missionCommander", data);
   }
   update(id, data) {
-    return http.put(`/missionComander/${id}`, data);
+    return http.put(`/missionCommander/${id}`, data);
   }
   delete(id) {
-    return http.delete(`/missionComander/${id}`);
+    return http.delete(`/missionCommander/${id}`);
   }
 }
 
