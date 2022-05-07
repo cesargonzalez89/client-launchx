@@ -7,7 +7,7 @@
           :class="{ active: index == currentIndex }"
           v-for="(missionCommander, index) in missionCommanders"
           :key="index"
-          @click="setActiveExplorer(missionCommander, index)"
+          @click="setActiveMissionComander(missionCommander, index)"
         >
           {{ missionCommander.username }}
         </li>
@@ -39,13 +39,9 @@ export default {
   name: "missionCommander-list",
   data() {
     return {
-      tutorials: [],
       missionCommanders: [],
-      currentTutorial: null,
-      currentMissionComander: null,
-      currentIndex: -1,
-      title: "",
-      missionCommanderId: ""
+      currentMissionCommander: null,
+      currentIndex: -1
     };
   },
   methods: {
@@ -58,8 +54,8 @@ export default {
           console.log(e);
         });
     },
-    setActiveExplorer(missionCommander, index) {
-      this.currentMissionComander= missionCommander;
+    setActiveMissionComander(missionCommander, index) {
+      this.currentMissionCommander= missionCommander;
       this.currentIndex = missionCommander? index : -1;
     }
   },
