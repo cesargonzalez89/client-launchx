@@ -20,7 +20,17 @@
         <div>
           <br><label><strong>Nombre:</strong></label> {{ currentMissionCommander.name}}
           <br><label><strong>Username:</strong></label> {{ currentMissionCommander.username}}
-          <br><label><strong>Principal:</strong></label> {{ currentMissionCommander.mainStack}}
+          <br><label><strong>Main Stacks:</strong></label> {{ currentMissionCommander.mainStack}}
+          <br><input type="checkbox"
+           id="currentEnrollment" 
+           :checked="currentMissionCommander.currentEnrollment"
+           disabled> 
+          <label for="currentEnrollment"> Current Enrollment</label>
+          <br><input type="checkbox"
+          id="hasAzureCertification"
+          :checked="currentMissionCommander.hasAzureCertification"
+          disabled> 
+          <label for="hasAzureCertification"> Has Azure Certification</label>
         </div>
         <router-link :to="'/missionCommander/' + currentMissionCommander.id" class="btn btn-info"> Editar</router-link>
       </div>

@@ -15,11 +15,26 @@
         />
       </div>
       <div class="form-group">
-        <label for="title">Habilidad principal</label>
+        <label for="title">Main Stack principal</label>
         <input type="text" class="form-control" id="title"
           v-model="currentMissionCommander.mainStack"
         />
       </div>
+      <div class="form-group">
+      <input type="checkbox"
+           id="currentEnrollment" 
+           :checked="currentMissionCommander.currentEnrollment"
+           v-model="currentMissionCommander.currentEnrollment" disabled> 
+          <label for="currentEnrollment"> Current Enrollment</label>
+      </div>
+      <div class="form-group">
+          <input type="checkbox"
+          id="hasAzureCertification"
+          :checked="currentMissionCommander.hasAzureCertification"
+          v-model="currentMissionCommander.hasAzureCertification" disabled> 
+          <label for="hasAzureCertification"> Has Azure Certification</label>
+    </div>
+
     </form>
     <button class="btn btn-danger mr-2" @click="deleteMissionCommander">
       Eliminar Mission Commander
