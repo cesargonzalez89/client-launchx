@@ -36,16 +36,32 @@
         />
       </div>
       <div class="form-group">
-      <input type="checkbox"
+      <!--<input type="checkbox"
            id="currentEnrollment"
-           v-model="missionCommander.currentEnrollment"> 
-          <label for="currentEnrollment"> Current Enrollment</label>
+           v-model="missionCommander.currentEnrollment" 
+           class="form-control"> 
+          <label for="currentEnrollment"> Current Enrollment</label>-->
+           <label class="label-checkbox" :class="{ 'checked': missionCommander.currentEnrollment }">
+             <input type="checkbox"
+             class="check-day"
+            id="currentEnrollment" 
+             v-model="missionCommander.currentEnrollment" />
+              Current Enrollment
+          </label>
       </div>
       <div class="form-group">
-          <input type="checkbox"
+          <!--<input type="checkbox"
           id="hasAzureCertification"
-          v-model="missionCommander.hasAzureCertification"> 
-          <label for="hasAzureCertification"> Has Azure Certification</label>
+          v-model="missionCommander.hasAzureCertification"
+          class="form-control"> 
+          <label for="hasAzureCertification"> Has Azure Certification</label>-->
+          <label class="label-checkbox" :class="{ 'checked': missionCommander.hasAzureCertification }">
+             <input type="checkbox" 
+             class="check-day"
+            id="hasAzureCertification"
+            v-model="missionCommander.hasAzureCertification"/>
+              Has Azure Certification
+          </label>
     </div>
       <button @click="saveMissionCommander" class="btn btn-success">Agregar</button>
     </div>

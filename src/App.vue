@@ -27,3 +27,39 @@ export default {
   name: "app"
 };
 </script>
+<style>
+.label-checkbox {
+  margin-right: 0.87rem;
+  margin-left: auto;
+  border: 1px solid #4273DE;
+  box-sizing: border-box;
+  border-radius: 10px;
+  padding: 5px 10px;
+  text-align: center;
+  display: inline-block;
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 16px;
+  color: #4273DE;
+}
+
+.check-day {
+  visibility: hidden;
+  position: absolute;
+  right: 0;
+  appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+}
+
+.checked {
+  background: #4273DE;
+  color: #fff;
+}
+
+.checked::before {
+  content: "✔";
+}
+</style>

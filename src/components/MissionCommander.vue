@@ -21,18 +21,28 @@
         />
       </div>
       <div class="form-group">
-      <input type="checkbox"
+      <!--<input type="checkbox"
            id="currentEnrollment" 
            :checked="currentMissionCommander.currentEnrollment"
-           v-model="currentMissionCommander.currentEnrollment" disabled> 
-          <label for="currentEnrollment"> Current Enrollment</label>
+           v-model="currentMissionCommander.currentEnrollment" 
+           class="form-control" disabled> 
+          <label for="currentEnrollment"> Current Enrollment</label>-->
+          <label class="label-checkbox" :class="{ 'checked': currentMissionCommander.currentEnrollment }">
+             <input type="checkbox" class="check-day" disabled/>
+              Current Enrollment
+          </label>
       </div>
       <div class="form-group">
-          <input type="checkbox"
+          <!--<input type="checkbox"
           id="hasAzureCertification"
           :checked="currentMissionCommander.hasAzureCertification"
-          v-model="currentMissionCommander.hasAzureCertification" disabled> 
-          <label for="hasAzureCertification"> Has Azure Certification</label>
+          v-model="currentMissionCommander.hasAzureCertification" 
+          class="form-control" disabled> 
+          <label for="hasAzureCertification"> Has Azure Certification</label>-->
+          <label class="label-checkbox" :class="{ 'checked': currentMissionCommander.hasAzureCertification }">
+             <input type="checkbox" class="check-day" disabled/>
+              Has Azure Certification
+          </label>
     </div>
 
     </form>
