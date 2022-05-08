@@ -36,11 +36,6 @@
         />
       </div>
       <div class="form-group">
-      <!--<input type="checkbox"
-           id="currentEnrollment"
-           v-model="missionCommander.currentEnrollment" 
-           class="form-control"> 
-          <label for="currentEnrollment"> Current Enrollment</label>-->
            <label class="label-checkbox" :class="{ 'checked': missionCommander.currentEnrollment }">
              <input type="checkbox"
              class="check-day"
@@ -50,11 +45,6 @@
           </label>
       </div>
       <div class="form-group">
-          <!--<input type="checkbox"
-          id="hasAzureCertification"
-          v-model="missionCommander.hasAzureCertification"
-          class="form-control"> 
-          <label for="hasAzureCertification"> Has Azure Certification</label>-->
           <label class="label-checkbox" :class="{ 'checked': missionCommander.hasAzureCertification }">
              <input type="checkbox" 
              class="check-day"

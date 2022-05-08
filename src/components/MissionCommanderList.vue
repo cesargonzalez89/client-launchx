@@ -21,19 +21,7 @@
           <br><label><strong>Nombre:</strong></label> {{ currentMissionCommander.name}}
           <br><label><strong>Username:</strong></label> {{ currentMissionCommander.username}}
           <br><label><strong>Main Stacks:</strong></label> {{ currentMissionCommander.mainStack}}
-         <!-- <br><input type="checkbox"
-           id="currentEnrollment" 
-           :checked="currentMissionCommander.currentEnrollment"
-           class="form-control"
-           disabled> 
-          <label for="currentEnrollment"> Current Enrollment</label>
-          <br><input type="checkbox"
-          id="hasAzureCertification"
-          :checked="currentMissionCommander.hasAzureCertification"
-          class="form-control"
-          disabled> 
-          <label for="hasAzureCertification"> Has Azure Certification</label>-->
-
+        
           <br><label class="label-checkbox" :class="{ 'checked': currentMissionCommander.currentEnrollment }">
              <input type="checkbox" class="check-day" disabled/>
               Current Enrollment
